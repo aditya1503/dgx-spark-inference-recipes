@@ -1,0 +1,12 @@
+.DS_Store
+.env
+*.log
+*.pid
+__pycache__/
+*.py[cod]
+config/dual-spark.env
+logs/
+model-cache/
+run/
+secrets/
+tokens/
