@@ -229,3 +229,7 @@ Use `--public` only after independently reviewing the staged files for hostnames
 - [DeepSeek V4 Flash](docs/deepseek-v4-flash.md)
 - [Unified-memory accounting](docs/memory.md)
 - [Networking and security](docs/security.md)
+
+## Upstream references
+
+- [DeepSeek V4 Flash 0731 — 1M context, NVFP4 KV, dual DGX Spark](https://github.com/tonyd2wild/DeepSeek-v4-Flash-0731-DSpark-1M-NVFP4-KV-2x-DGX-Spark)
