@@ -202,27 +202,6 @@ An OpenCode vision router should call Qwen with `Authorization: Bearer local`, s
 - Qwen returns `content: null`: inspect `reasoning` and `reasoning_content`, increase `max_tokens`, or disable thinking.
 - High yellow memory in `htop`: inspect `MemAvailable` and container cgroups; yellow is generally reclaimable file cache.
 
-## Initialize and push a repository
-
-This directory can be published after reviewing `git status` and confirming that `config/dual-spark.env` remains ignored.
-
-```bash
-git init -b main
-git add .
-git status
-git commit -m "Add validated dual DGX Spark inference recipes"
-git remote add origin git@github.com:YOUR_GITHUB_USER/dgx-spark-inference-recipes.git
-git push -u origin main
-```
-
-Using GitHub CLI instead:
-
-```bash
-gh repo create dgx-spark-inference-recipes --private --source=. --remote=origin --push
-```
-
-Use `--public` only after independently reviewing the staged files for hostnames, usernames, tokens, private configuration, logs, and model artifacts.
-
 ## Further documentation
 
 - [Qwen3.5 NVFP4 vision](docs/qwen35-nvfp4.md)
